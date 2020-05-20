@@ -1,0 +1,111 @@
+@import "fonts.scss";
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.wraper{
+    max-width: 1366px;
+    background-image: url(/img/hello.footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    font-size: 16px;
+    height: 100vh;
+    background-position: center;
+    .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        max-width: 1170px;
+        margin: 0 auto;
+            .contact-heading{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 10%;
+                font-family: 'Asap-Regular', sans-serif;
+                font-size: 46px;
+                color: #f3f3f3;
+                text-transform: uppercase;
+                .contact-heading__title{
+                    height: 3px;
+                    background-color:#c1c1c1;
+                    width:64px;
+                }
+            }
+        .section{
+            max-width: 780px;
+            max-height: 375px;
+            width: 100%;
+            height: 100%;
+            padding: 0 10px;
+            // как задать минимальный размер формам?
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        .contact-form-identification{
+            margin-bottom: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-grow: 1;
+            .contact-form-identification__email,
+            .contact-form-identification__name{
+              width: 100%;
+            }
+            .contact-form-identification__name{
+                margin-right:30px ;
+            }
+        }
+        .contact-form-identification__email,
+            .contact-form-identification__name,
+            .contact-content-form__comment{
+                padding-left: 5px;
+                padding-top: 5px;
+            }
+        .contact-content-form__comment{
+            height: 100%;
+            width: 100%;
+            max-height: 210px;
+            margin-bottom: 30px;
+
+        }
+       .contact-content-form__button{
+           max-width: 125px;
+           max-height: 50px;
+           width: 100%;
+           height: 100%;
+        //    как задать заполнение контента на 100%
+           font-family: 'Asap-Regular', sans-serif;
+           text-transform: uppercase;
+           color: #5c5c5c;
+           font-weight: 800;
+        //    как добавить значок сюда? чере блоки ??
+       } 
+    }
+}
+    }
+    .contact-footer{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 10%;
+        border-top: 2px solid #c1c1c1;
+        .contact-footer-rule{
+            margin-left: auto;
+            margin-right: auto;
+            color: white;
+        }
+        .contact-footer-media{
+            position: absolute;
+            // почему так работает?
+        }
+        // .contact-footer:nth-child(2){
+        //     text-align: center;;
+        // почему опять не работает}
+    }
+}

@@ -1,1 +1,74 @@
+@import "normalize.scss";
 @import "fonts.scss";
+
+.container-portfolio {
+  max-width: 1366px;
+  margin: 0 auto;
+  background: #f6f6f6;
+  .portfolio {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-text {
+      margin-top: 10vh;
+      &__title {
+        font-family: "Asap-Bold";
+        font-size: 2.8rem;
+        color: #4d4d4d;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        @media screen and (max-width: 768px) {
+          font-size: 2rem;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          top: -20px;
+          left: 0;
+          width: 60px;
+          height: 5px;
+          background-color: #4d4d4d;
+          right: 0;
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    }
+    &-gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      &-block {
+        margin: 10px;
+        .gallery-img {
+          max-width: 370px;
+          max-height: 320px;
+          &:hover {
+            box-shadow: 0px 5px 15px 10px #e0e0e0;
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+    .portfolio-btn {
+      margin: 3vh 0 10vh 0;
+      .portfolio-btn__item {
+        width: 190px;
+        height: 50px;
+        transition: all 0.3s;
+        border: none;
+        font-family: "Asap-Medium";
+        font-size: 1rem;
+        text-transform: uppercase;
+        background-color: #ffffff;
+        color: #4d4d4d;
+        &:hover {
+          box-shadow: 0px 5px 15px 10px #e0e0e0;
+        }
+      }
+    }
+  }
+}

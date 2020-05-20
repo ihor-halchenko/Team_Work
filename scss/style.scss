@@ -1,1 +1,86 @@
 @import "fonts.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+div.wrapper-services-block {
+  background: #f6f6f6;
+  width: 100%;
+  height: 100%;
+}
+
+div.sevices-block,
+div.block-skills {
+  margin: 0 98px;
+  @media screen and (max-width: 768px) {
+    margin: 0 68px;
+  }
+  @media screen and (max-width: 540px) {
+    margin: 0 38px;
+  }
+  div.services-block__title,
+  div.block-skills__title {
+    text-align: center;
+    h2 {
+      padding-top: 140px;
+      font-family: "Asap-Bold";
+      text-transform: uppercase;
+      color: #7a7a7a;
+      font-size: 46px;
+      text-align: center;
+      @media screen and (max-width: 768px) {
+        padding-top: 100px;
+      }
+      @media screen and (max-width: 540px) {
+        padding-top: 60px;
+      }
+    }
+    h2::before {
+      display: block;
+      content: "";
+      width: 60px;
+      height: 4px;
+      margin: 0 auto;
+      background: #7a7a7a;
+    }
+  }
+}
+
+.first-line__block-icon,
+.second-line__block-icon {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 65px;
+  text-align: center;
+  @media screen and (max-width: 540px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+}
+.second-line__block-icon {
+  padding-bottom: 120px;
+  @media screen and (max-width: 540px) {
+    padding-bottom: 60px;
+  }
+}
+.personal-block__icon {
+  width: 33.3%;
+  @media screen and (max-width: 540px) {
+    margin-bottom: 10px;
+  }
+  p {
+    font-family: "Asap-Medium";
+    font-size: 24px;
+    color: #4d4d4d;
+  }
+}
+div.block-skills {
+  text-align: center;
+  .block-schedulel img {
+    width: 100%;
+    padding: 60px 0 125px 0;
+  }
+}
